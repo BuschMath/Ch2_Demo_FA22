@@ -1,23 +1,24 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 // Function prototype
 void TestFunction();
 
-const std::string m = "Monday";
-
+const string m = "Monday";
 
 int main()
 {
-	const std::string TuesdayIsADayOfTheWeek = "Tuesday";
+	const string TuesdayIsADayOfTheWeek = "Tuesday";
 
 	// Function call
 	TestFunction();
-	std::cout << "Test";
+	cout << "Test";
 	// Function call
 	TestFunction();
 
-	std::cout << std::endl << m << TuesdayIsADayOfTheWeek;
+	cout << endl << m << TuesdayIsADayOfTheWeek;
 
 	return 0;
 }
@@ -25,7 +26,7 @@ int main()
 // Function definition
 void TestFunction()
 {
-	std::cout << "In function";
-	std::cout << m;
+	cout << "In function";
+	cout << m;
 	//std::cout << TuesdayIsADayOfTheWeek; Not valid
 }
